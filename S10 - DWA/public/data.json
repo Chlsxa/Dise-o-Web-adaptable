@@ -1,0 +1,20 @@
+[
+    {
+        "album": "Comedown Machine",
+        "artista": "The Strokes",
+        "genero": "Indie Rock",
+        "stock": 65
+    },
+    {
+        "album": "In Rainbows",
+        "artista": "RadioHead",
+        "genero": "Alternativo",
+        "stock": 80
+    },
+    {
+        "album": "Siempre es hoy",
+        "artista": "Gustavo Cerati",
+        "genero": "Pop rock",
+        "stock": 0
+    }
+]
