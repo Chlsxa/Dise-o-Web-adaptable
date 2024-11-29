@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactuando con clase en JavaScript</title>
+    <style>
+        .thumb{
+            width: 200px;
+            transition: 30ms all ease;
+        }
+        .big{
+            width: 600px;
+        }
+        .normalTitle{
+            border: 1px solid blue;
+            background-color: rgb(228, 218, 218);
+            padding: 10px;
+        }
+        .bigTitle{
+            font-size: 60px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <input type="button" value="Cambiar tamaño" onclick="zoom();">
+    </form>
+
+    <h1 id="titulo" class="normalTitle">Diseño Web Adaptable</h1>
+    <img src="img/dw.jpg" width="400px" class="thumb"  id="thumb" alt="">
+
+    <script>
+        var zoom = function(){
+            var thumb = document.getElementById("thumb");
+            if(thumb.className == "thumb"){
+             thumb.setAttribute ("class", "thumb big");
+            }
+            else{
+                thumb.setAttribute("class", "thumb");
+            }
+            var titulo = document.getElementById("titulo");
+            if(titulo.className == "normalTitle"){
+                titulo.setAttribute("class", "normalTitle bigTitle");
+                titulo.style.backgroundColor = "cyan";
+            }
+            else{
+                titulo.setAttribute("class", "normalTitle");
+                titulo.style.backgroundColor = "blue";
+            }
+        }
+    </script>
+</body>
+</html>
